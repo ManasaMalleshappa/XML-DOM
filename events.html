@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>Handling Events</title>
+	</head>
+	<body>
+		<div id="cal"></div>
+		<script src="process+events.js"></script>
+	<script>
+		var oReq = new XMLHttpRequest();
+		oReq.addEventListener("load", processEvents);
+		oReq.open("GET", "http://pubpages.unh.edu/~jlw/771/events.xml");
+		oReq.send();
+	</script>
+	</body>
+</html>
